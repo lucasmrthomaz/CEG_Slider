@@ -1,0 +1,51 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+
+   /* For LightSlder */
+   .sliderHolder {
+    margin: auto;
+    /*background-color: #333;*/
+    width: 720px;
+  }
+
+  ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
