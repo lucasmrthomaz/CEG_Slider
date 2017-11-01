@@ -7,14 +7,16 @@
  * Time: 06:09
  */
 
-const CLASSES_BASEDIR = DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'classes' . DIRECTORY_SEPARATOR;
+/**
+* Autoload for classes
+**/
+const CLASSES_BASEDIR = 'app' . DIRECTORY_SEPARATOR . 'classes' . DIRECTORY_SEPARATOR;
 const FILEEXT = '.php';
 
 spl_autoload_register(function ($class_name) {
-    include CLASSES_BASEDIR . $class_name . FILEEXT;
+    include (CLASSES_BASEDIR . $class_name . FILEEXT);
 });
 
-$db = new Database();
 
 //Checagem se url possui parametro de origem
 /*
